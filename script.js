@@ -65,11 +65,11 @@ function addHtml(card, info) {
 }
 function infoItems(object) {
   return ` <div class="card">
-  <img src="img/male1.png" alt="img-designer">
+  <img src="img/${object.img}" alt="img-designer">
   <div class="info-card">
-      <h4>Marco Bianchi</h4>
-      <h5>Designer</h5>
-      <a href="#">marcobianchi@team.com</a>
+      <h4>${object.name}</h4>
+      <h5>${object.role}</h5>
+      <a href="#">${object.email}</a>
   </div>
 </div>`
 }
