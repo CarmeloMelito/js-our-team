@@ -56,16 +56,16 @@ function addHtml(card, info) {
 
     items += infoItems(newCard);
 
-    // console.log(newCard);
+    console.log(newCard);
   }
 
   card.innerHTML = items;
 
-  //console.log(info);
+  console.log(info);
 }
 function infoItems(object) {
   return ` <div class="card">
-  <img src="img/${object.img}" alt="img-designer">
+  <img src="${object.img}" alt="${object.alt}">
   <div class="info-card">
       <h4>${object.name}</h4>
       <h5>${object.role}</h5>
