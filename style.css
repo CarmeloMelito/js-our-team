@@ -4,7 +4,19 @@
     box-sizing: border-box;
 }
 
-header {}
+header h1 {
+    color: #e53170;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 30px;
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+}
 
 img {
     height: 150px;
@@ -14,22 +26,25 @@ img {
 
 .container {
     margin: 50px;
-    max-width: fit-content;
+    max-width: max-content;
     display: flex;
     flex-wrap: wrap;
 
-    flex-shrink: 0;
+
 }
 
 .card {
     display: flex;
     background-color: black;
-
+    margin: 20px;
 }
 
 .info-card {
     color: white;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 }
 
