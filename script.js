@@ -36,14 +36,43 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
 console.log(teamMembers);
 
+// ELEMENTO HTML
 const teamCard = document.querySelector(".container");
-addHtml(teamCard);
-function addHtml(card) {
-  console.log(card);
-}
 
+addHtml(teamCard, teamMembers);
+
+//FUNZIONE ELEMENTO
+function addHtml(card, info) {
+
+  let items = "";
+
+  //console.log(items)
+  for (let n = 0; n < info.length; n++) {
+
+    const newCard = info[n];
+
+    items += infoItems(newCard);
+
+    // console.log(newCard);
+  }
+
+  card.innerHTML = items;
+
+  //console.log(info);
+}
+function infoItems(object) {
+  return ` <div class="card">
+  <img src="img/male1.png" alt="img-designer">
+  <div class="info-card">
+      <h4>Marco Bianchi</h4>
+      <h5>Designer</h5>
+      <a href="#">marcobianchi@team.com</a>
+  </div>
+</div>`
+}
 
 
 
